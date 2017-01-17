@@ -1,0 +1,11 @@
+React主要有如下3个特点：
+
+    1.作为UI(Just the UI)
+    2.虚拟Dom
+      这是一个亮点，是React最重要的一个特性，放进内存，最小更新的视图，差异部分更新，diff算法
+    3.数据流(Data Flow) 单向数据流
+
+学习React需要掌握哪些知识
+      JSX
+      ES6
+      CSS+DIV  Js
