@@ -9,3 +9,46 @@ React主要有如下3个特点：
       JSX
       ES6
       CSS+DIV  Js
+
+
+
+      flex属性：
+
+      1.display:
+
+         display:flex   |  inline-flex
+
+         块级伸缩容器        行内级伸缩容器
+
+      2.flex-drection
+
+          指定主轴的方向  flex-direction:row | row-reverse|column |column-reverse
+
+      3.flex-wrap
+
+          伸缩容器在主轴方向空间不足的情况下，是否换行以及如何换行
+
+          flex-wrap:nowrap | wrap | wrap-reverse
+
+       4.flex-flow
+
+
+          是flex-direction和flex-wrap的缩写版本，它同时定义了伸缩容器的主轴和侧轴，其默认值为
+          row nowrap
+
+       5.justify-content：
+
+           用来定义伸缩项目在主轴线的对其方式，语法为：
+
+           justify-content:flex-start(默认值)|flex-end|center|space-between|space-around
+
+       6.align-items
+
+            用来定义伸缩项目在交叉轴上的对其方式，语法为：
+
+            align-items:flex-start|flex-end|center|baseline|stretch
+       7.align-content
+
+            用来调整伸缩项目出现换行后在交叉轴上的对其方式
+
+            align-content:flex-start|flex-end|center|space-between|space-around|strtch(默认值)
