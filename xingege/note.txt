@@ -12,7 +12,7 @@ React主要有如下3个特点：
 
 
 
-      flex属性：
+      flex容器属性：
 
       1.display:
 
@@ -52,3 +52,34 @@ React主要有如下3个特点：
             用来调整伸缩项目出现换行后在交叉轴上的对其方式
 
             align-content:flex-start|flex-end|center|space-between|space-around|strtch(默认值)
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
