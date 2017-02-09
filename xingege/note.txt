@@ -11,7 +11,7 @@ React主要有如下3个特点：
       CSS+DIV  Js
 
 
-
+Day01
       flex容器属性：
 
       1.display:
@@ -42,7 +42,7 @@ React主要有如下3个特点：
 
            justify-content:flex-start(默认值)|flex-end|center|space-between|space-around
 
-       6.align-items
+       6.align-items 
 
             用来定义伸缩项目在交叉轴上的对其方式，语法为：
 
@@ -54,8 +54,60 @@ React主要有如下3个特点：
             align-content:flex-start|flex-end|center|space-between|space-around|strtch(默认值)
 
 
+    flexbox伸缩项目属性：
 
-            
+        1.order:定义项目的排列顺序，数值越小，排列越靠前，默认为0。语法为:order:整数值
+        2.flex-grow:
+            定义伸缩项目的放大比例，默认值为0，即表示如果存在默认空间.语法为：flex-grow:整数值
+        3.flex-shrink
+            定义伸缩项目的收索能力，默认值为1，其语法为：flex-shrink:整数值
+        4.flex-basis
+            用来设置伸缩项目的基准值，剩余的控件按比例进行伸缩，其语法为：flex-basis：length|auto
+        5.flex
+            2,3,4的缩写
+        6.align-self
+            用来设置单独的伸缩项目在交叉轴上的对齐方式，会覆盖默认的对齐方式，其语法为align-self:auto|flex-start|flex-end|center |baseline|stretch
+            stretch(伸缩项目在交叉轴方向上占满伸缩容器，如果交叉轴为垂直方向的话，只有在不设置高度的情况下才能看到效果)
+
+    在React Native中使用flexbox
+
+        RN目前主要支持flexbox的如下6个属性
+        1.alignItems
+        用来定义伸缩项目在交叉轴上的对其方式，语法为：
+            alignItems:flex-start|flex-end|center|stretch
+        2.alignSelf
+        用来设置单独的伸缩项目在交叉轴上的对齐方式，会覆盖默认的对齐方式，其语法为align-self:auto|flex-start|flex-end|center|stretch
+        stretch(伸缩项目在交叉轴方向上占满伸缩容器，如果交叉轴为垂直方向的话，只有在不设置高度的情况下才能看到效果)
+        3.flex
+            flex
+            2,3,4的缩写
+        4.flexDirection
+            指定主轴的方向  flex-direction:row | row-reverse|column |column-reverse
+            默认值是column
+        5.flexWrap
+            伸缩容器在主轴方向空间不足的情况下，是否换行以及如何换行
+
+            flex-wrap:nowrap | wrap | wrap-reverse
+        6.justifyContent
+
+            用来调整伸缩项目出现换行后在交叉轴上的对其方式
+
+            align-content:flex-start|flex-end|center|space-between|space-around|strtch(默认值)
+
+    
+      JSX入门
+        
+        React是由ReactJS和React Native构成的，其中ReactJs是facebook的一个前端开源框架，React Native是ReactJs思想上Native的体现
+
+        JSX并不是一门语言，仅仅是一个语法糖，允许开发者在javascript中书写html语法，最后每个html标签都转化为javascript来运行。
+
+        1.环境：
+
+        2.载入方式：
+
+
+
+
 
 
 
