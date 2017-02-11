@@ -194,6 +194,38 @@ Day01
 
                 componentWillUnmount
 
+        
+        ReactJs组件通讯
+
+                ReactJs组件关系是一层套一层，DOM结构组织结构比较清晰
+
+                父组件  子组件
+
+                1.子组件如何调用父组件的方法
+
+                2.父组件如何调用子组件
+
+                首先用属性ref给子组件取个名字
+
+                this.ref.名字.getDOMNode()
+
+
+         React Native JSX
+
+                React Native 中没有DOM的概念，只有组件的概念，所以我们在ReactJs中使用的HTML标签以及对DOM的操作是不起作用的，
+                但是组件的生命周期，JSX的语法，事件绑定，自定义属性等，在RN和ReactJs中是一样的。
+
+        
+        React Native 之View组件
+
+                在React Native里面有一个类似于div的组件，那就是View组件，支持多层嵌套，支持flexbox布局
+
+                实例步骤：
+
+                1.
+
+                2.
+
 
 
 
