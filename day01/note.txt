@@ -149,50 +149,7 @@ Day01
 
             注意：驼峰 onClick
 
-        
-    
-        Day02
 
-            React是全局对象  顶层API与组件API
-
-            React.creatClass创建组件类的方法
-
-            React.reader渲染，将指定组件渲染到指定DOM节点上
-
-
-            render：组件级API，返回组件的内部结构。
-
-            React.render 被ReactDOM.render替代
-
-
-        ReactJS实战之ReactJS组件生命周期
-
-            1.创建阶段
-
-                getDefaultProps：处理props的默认值 在React.createClass调用
-
-            2.实例化阶段
-
-                React.reader() 启动之后
-
-                getInitialState ,componentWillmount ,render ,componentDidmount
-
-                state:组件的属性，主要是用来存储组件自身需要的数据，每次数据的更新都是通过修改state属性的值，ReactJs内部
-                会监听state属性的变化，一旦发生变化的话，就会主动触发组件的render方法来更新虚拟DOM结构
-
-                虚拟DOM(内存)：将真实的DOM结构映射成一个Json数据结构。
-
-            3.更新阶段
-
-                主要发生在用户操作之后或父组件有更新的时候，此时会根据用户的操作行为响应的页面结构的调整
-
-                componentWillReceiveProps shouldComponentUpdate componentWillUpdate render(diff算法) componentDidUpdate
-
-
-
-            4.销毁阶段
-
-                componentWillUnmount
 
 
 
