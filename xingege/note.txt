@@ -105,6 +105,52 @@ Day01
 
         2.载入方式：
 
+        3.标签：Html标签和ReactJs自定义标签(首字母一定要大写)
+
+        4.转换 解析器
+
+        <h3>输入</h3> 转换成：React.createElement("h3",null,"输入") 返回一个ReactElement对象给我们。
+
+        5.执行Javascript表达式
+
+        6.注释
+
+        7.属性：
+
+            var msg = <h1 width="10px">react</h1>
+
+            React.createElement("h1",{width:"10px"},"react");
+        
+        8.延展属性：
+
+            使用ES6语法
+
+            var  props={};
+            props.foo = "1";
+            props.bar = "1";
+
+            <h1 {...props} foo="2">欢迎关注我的微信号</h1> 转化成
+
+            React.createElement("h1",React.__spread({},props,{foo:"2"}),"欢迎关注我的微信号")；
+        
+        9.自定义属性(HTML5给出了方案，凡是以data-开头的自定义属性，可渲染到页面)
+        
+        10.显示HTML 显示一段HTML字符串，而不是html页面
+        
+            借助一个属性_html
+
+            <div>{{_html:'<h1>欢迎关注我的微信号</h1>'}}</div>
+
+        11.样式的使用
+
+            style属性    js对象 外层{}按照JSX语法 内层{}是js的对象
+
+        12.事件绑定
+
+            注意：驼峰 onClick
+
+
+
 
 
 
