@@ -4,50 +4,60 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+    TextInput
 } from 'react-native';
 
 export default class TextInputDemo extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+           <Search/>
+        );
+    }
 }
 
+export class Search extends Component {
+    render() {
+        return (
+            <View style={styles.textInput}>
+                <View style={styles.topStatus}>
+                    <TextInput></TextInput>
+                </View>
+                <View style={styles.text}>
+                    <Text>搜索</Text>
+                </View>
+            </View>
+        );
+    }
+}
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    textInput: {
+
+        flexDirection: 'row',
+
+    },
+    topStatus:{
+        flex:1,
+        marginTop:20,
+        borderColor:'#f00',
+        borderWidth:2,
+        borderRadius:2
+
+    },
+    text:{
+
+        backgroundColor:'#00f',
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop:20
+
+    }
+
 });
 
 AppRegistry.registerComponent('TextInputDemo', () => TextInputDemo);
