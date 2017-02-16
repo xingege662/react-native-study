@@ -222,9 +222,118 @@ Day01
 
                 实例步骤：
 
-                1.
+                1.加载View组件
 
-                2.
+                2.创建组件
+
+                3.添加样式表
+
+                4.注册入口
+
+                5.外层布局
+
+                6.flexbox水平三栏布局
+
+                7.上下两栏布局
+
+                8.完善效果
+
+
+        Day03   
+
+            Text组件主要用于显示文本;具有相应性，可以嵌套，可以继承样式
+
+            内部Text组件可以继承外部Text组件的样式
+
+            Text组件的特性：
+
+                1.onPress
+
+                2.numberOfLines 最多显示多少行
+
+                3.onLayout
+
+                //案例，新闻客户端
+
+
+            Navigator:
+
+                一个应用往往是由多功能的视图组成的！多页面的切换：路由或导航
+
+                在RN中专门负责视图切换的组件：Navigator，NavigatorIOS
+
+                Navigator和NavigatorIOS都可以用来管理应用中“场景的”导航(也可以称作屏幕)，导航器建立了一个路由栈，用来弹出，推入或者
+                替换路由状态。他们和html5中的history API很相似。主要区别在于NavigatorIOS使用了IOS中的UINavigationController类，而
+                Navigator则完全用js重写了一个类似功能的React组件。
+
+                导航器通过路由对象来分辨不同的场景。利用renderScene方法，导航栏可以根据指定的路由来渲染场景。
+                可以通过configurScene属性获取指定路由对象的配置信息，从而改变场景的动画或者手势
+
+                最后的几行：
+                  renderScene={
+            (route, navigator) =>
+             {
+            let Component = route.component;
+            return <Component {...route.params} navigator={navigator} 
+
+                先看到回调里的两个参数是route，navigator，通过打印我们发现route里其实就是我们传递的name，component这两个货，navigator是一个
+                Navigator的对象，为什么呢，因为它由push，pop，jump。。。等方法，这是我们等下用来跳转页面用的那个navigator对象。
+
+                return <Component {...route.params} navigator={navigator}>这里有一个判断，也就是如果传递进来的component存在，那我们
+                就是返回一个这个component，结合前面initalRoute 的参数，我们就知道，这是一个会被render出来给用户看的component，然后navigator
+                作为props传递给了和这个component
+
+
+
+            navigator的参数传递：
+
+
+            Demo4:TextInput
+
+                文本输入框：基本组件 自动补全的搜索功能
+
+                TextIntput的主要属性和事件如下：
+
+                autoCapitalize:枚举类型，可选值有  none   sentences   words characters当用户输入时，用于提示
+
+                placeHolder:占位符，在输入前显示的文本内容
+
+                value：文本输入框个默认值
+
+                placeHolderTextColor：占位符文本的颜色
+
+                password：boolean类型  true表示密码输入显示
+
+                multiline：多行输入
+
+                editable：文本框是否可输入
+
+                autoFocus:自动聚焦
+
+                clearButtonMode：枚举类型，never  while-editing  unless-editing  always用于显示清除按钮
+
+                maxLength：能够输入的最长的字符数
+
+                enablesReturnKeyAutomativally：如果为true 表示没有文本时键盘是不能有返回键的，其默认值为false
+
+                returnKeyType：枚举类型  default go google jion  next route  search send  yahoo done
+                emergency-call  表示软键盘返回键显示的字符串
+
+                secureTextEntry：隐藏输入内容，默认值为false
+
+                onChangeText：当文本输入框的内容变化时，调用该函数；onChangeText接收一个文本的参数对象
+
+                onChange：当文本变化时，调用该函数
+
+                onEndEditing：当结束编辑时，调用该函数
+
+                onBlur：失去焦点触发事件
+
+                onFocus:获取焦点时触发事件
+
+
+                
+
 
 
 
